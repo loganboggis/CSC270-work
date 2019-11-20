@@ -1,5 +1,3 @@
-# CSC270-work
-
 | Character | Character | Character | Character | Character |
 |-----------|-----------|-----------|-----------|-----------|
 | `space` (20) | `!` (21) | `"` (22) | `$` (24) | `&` (26) |
