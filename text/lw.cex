@@ -9,7 +9,7 @@ license#CC Share Alike.  For details, see more info.
 
 #!ctscatalog
 urn#citationScheme#groupName#workTitle#versionLabel#exemplarLabel#online#lang
-urn:cts:fuTexts:GROUP.WORK.VERSION:#CITATION-SCHEME#NAME-OF-GROUP#TITLE-OF-WORK#INFO-ABOUT-VERSION##true#eng
+urn:cts:fuTexts:alcott.lw.boggis:#chapter.paragraph#Louisa May Alcott#Little Women#Digital Edition by: Logan Boggis##true#eng
 
 #!ctsdata
 urn:cts:fuTexts:alcott.lw.boggis:1.1#PLAYING PILGRIMS
