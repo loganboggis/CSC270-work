@@ -1,9 +1,12 @@
 html {
-	margin: 3em;
-	background-color: #fffaf7;
+	margin: 8em;
+	background-color: #fffcf7;
 	font-family: Courier, Georgia, serif;
 	line-height: 1.5em;
 	color: 992303 ;
+	padding: 1px;
+	background-blend-mode: color-dodge;
+
 
 }
 
@@ -23,17 +26,29 @@ a:hover {
 	color: 992303
 }
 
+.cts_tocHyphen:after {
+	content: "-";
+}
+
 /* You can define any color with a 3-digit "hex-code" */
 /* The three values are from 0-F, and represent Red, Green, Blue */
 header {
 	color: #992303;
-	font-size: 200%;
+	font-size: 400%;
+	padding: 1px;
+	text-align: center;
+	font-variant: small-caps;
+	padding-bottom: 10px;
+}
+
+footer {
+	padding-left: 5px
 }
 
 article {
-	border: 1px solid silver;
+
 	padding: 2em;
-	text-align: center;
+	text-align: justify;
 
 }
 
@@ -69,6 +84,7 @@ div.cts_corpus {
 .cts_corpusTitle {
 	color: blue ;
 	border: 1px dashed 992303;
+	opacity: .5;
 }
 
 /* You can add space on any side of something with:
@@ -91,4 +107,25 @@ div.cts_corpus {
 
 progress.cts_progress {
 	width: 100%;
+}
+
+
+/* Style the header with a grey background and some padding */
+.header {
+  overflow: hidden;
+  background-color: #992303;
+  padding: 20px 10px;
+}
+
+@media screen and (min-width : 900px) {
+    #header{
+        top: 0;
+        left: 0;
+        width: 250px;
+        position: absolute;
+    }
+
+    body{
+        border-left: 250px solid #992303;
+    }
 }
