@@ -71,7 +71,22 @@ object webWriter {
 				println(" \n ")
 
 				// 3. For each chunk, make an HtmlCorpus object (see below)
-				val htmlVec: Vector[HtmlCorpus] = vecToHtmlCorpora(cat, corpVec)
+				val htmlVecNoTOC: Vector[HtmlCorpus] = vecToHtmlCorpora(cat, corpVec)
+
+				// 3a. Ugly Hack
+				val tocHtml: String = standAloneToc(htmlVecNoTOC)
+				val htmlVec: Vector[HtmlCorpus] = htmlVecNoTOC.map( c => {
+					HtmlCorpus(
+						c.corp,
+						c.cat,
+						c.fileName,
+						c.index,
+						c.howMany,
+						c.prevFileName,
+						c.nextFileName,
+						Some(tocHtml)
+					)
+				})
 
 				// 4. For each of those, write it to a file.
 				val htmlDir: File = File(htmlDirectory)
@@ -88,6 +103,33 @@ object webWriter {
 				println(s"""\n-----\nBuilding the site failed with the following error: \n\n${e}\n\n-----\n)""")
 			}
 		}
+  }
+
+  def standAloneToc(hcv: Vector[HtmlCorpus]): String = {
+
+		val tocEntries: String = hcv.map( vc => {
+			val firstPassage: String = vc.corp.nodes.head.urn.passageComponent
+			val lastPassage: String = vc.corp.nodes.last.urn.passageComponent
+			if (firstPassage == lastPassage) {
+				s"""<li class="cts_tocEntry"><span class="cts_tocIndex">${vc.index + 1}.</span> 
+				<a href="${urnToFileName(vc.corp.nodes.head.urn.dropPassage, Some(vc.index))}">
+				<span class="cts_tocBit">${firstPassage}</span>
+				</a></li>"""
+			} else {
+				s"""<li class="cts_tocEntry"><span class="cts_tocIndex">${vc.index + 1}.</span> 
+				<a href="${urnToFileName(vc.corp.nodes.head.urn.dropPassage, Some(vc.index))}">
+				<span class="cts_tocBit">${firstPassage}</span><span class="cts_tocHyphen">–</span><span class="cts_tocBit">${lastPassage}</span>
+				</a></li>"""	
+			}
+		}).mkString("\n")
+
+
+  	s"""<div class="sidebar-toc">
+  		<h3>Contents</h3>
+  		<ul>
+				${tocEntries}  					
+  		</ul>
+  	</div>"""
   }
 
 
@@ -120,7 +162,8 @@ object webWriter {
 		index: Int,
 		howMany: Int,
 		prevFileName: Option[String],
-		nextFileName: Option[String]
+		nextFileName: Option[String],
+		toc: Option[String] = None
 	) {
 
 		override def toString: String = {
@@ -129,7 +172,15 @@ object webWriter {
 
 		def save(filePath:String = "html/"):Unit = {
 			val file = File(filePath + fileName)
-			file.overwrite(this.html)
+			val htmlToWrite: String = this.toc match {
+				case Some(t) => {
+					this.html.replaceAll("TABLE_OF_CONTENTS_GOES_HERE",t)
+				}	
+				case None => {
+					this.html.replaceAll("TABLE_OF_CONTENTS_GOES_HERE","")
+				}
+			}
+			file.overwrite(htmlToWrite)
 		}
 
 
@@ -197,6 +248,7 @@ object webWriter {
 			</head>
 			<body>
 			<header>Your header</header>
+			TABLE_OF_CONTENTS_GOES_HERE
 			<article>
 			${sequenceString}
 			${catString}
