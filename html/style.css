@@ -6,7 +6,7 @@ html {
 	color: 992303 ;
 	padding: 1px;
 	background-blend-mode: color-dodge;
-
+  margin-right: 100em
 
 }
 
@@ -16,7 +16,7 @@ a {
 	text-decoration: none;
 	margin: 0 0.5em 0 0;
 	padding: 2px;
-	width: 100%;
+	width: 70%;
 }
 
 /* :hover	 is what it will look like when you hover the mouse over an element */
@@ -102,7 +102,7 @@ div.cts_corpus {
 
 .cts_node {
 	margin-top: 1em;
-	max-width: 150em;
+	max-width: 100em;
 }
 
 progress.cts_progress {
@@ -117,7 +117,7 @@ progress.cts_progress {
   padding: 20px 10px;
 }
 
-@media screen and (min-width : 900px) {
+@media screen and (min-width : 700px) {
     #header{
         top: 0;
         left: 0;

@@ -11,7 +11,7 @@ import java.util.Calendar
 
 val spellCheckSplitters: String =  """[()\[\]·⸁.,…:_; "?·!–—⸂⸃-]"""
 
-val lib: CiteLibrary = loadLibrary("text/arist_politics.cex")
+val lib: CiteLibrary = loadLibrary("text/lw.cex")
 
 val standardDict: Vector[String] = loadFile("validation-data/SCOWL-wl/words.txt")
 val userDict: Vector[String] = loadFile("validation-data/userDictionary.txt")
@@ -34,9 +34,9 @@ val splitIntoWords: Vector[String] = {
 }
 
 val badWordVec: Vector[String] = {
-	splitIntoWords.filter( w => { 
+	splitIntoWords.filter( w => {
 				val inDict: Boolean = standardDict.contains(w)
 				val inUserDict: Boolean = userDict.contains(w)
-				( inDict | inUserDict ) == false 
+				( inDict | inUserDict ) == false
 	})
 }
