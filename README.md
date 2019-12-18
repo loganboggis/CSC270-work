@@ -30,7 +30,6 @@ This version of this text is [in the Public Domain](http://creativecommons.org/l
 
 ![license](http://i.creativecommons.org/p/zero/1.0/88x31.png)
 
-Edited, 12/9/2019
 
 ## Running Scripts for Validation, Publication, and Analysis
 
