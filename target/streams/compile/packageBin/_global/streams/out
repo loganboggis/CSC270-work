@@ -1,0 +1,37 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /home/logan/CSC270-work/target/scala-2.12/workbench_2.12-0.0.1.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/logan/CSC270-work/target/scala-2.12/classes[0m
+[0m[[0m[0mdebug[0m] [0m[0m	edu[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/logan/CSC270-work/target/scala-2.12/classes/edu[0m
+[0m[[0m[0mdebug[0m] [0m[0m	edu/furman[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/logan/CSC270-work/target/scala-2.12/classes/edu/furman[0m
+[0m[[0m[0mdebug[0m] [0m[0m	edu/furman/classics[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/logan/CSC270-work/target/scala-2.12/classes/edu/furman/classics[0m
+[0m[[0m[0mdebug[0m] [0m[0m	edu/furman/classics/csc270[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/logan/CSC270-work/target/scala-2.12/classes/edu/furman/classics/csc270[0m
+[0m[[0m[0mdebug[0m] [0m[0m	edu/furman/classics/csc270/hocuspocus$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/logan/CSC270-work/target/scala-2.12/classes/edu/furman/classics/csc270/hocuspocus$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	edu/furman/classics/csc270/hocuspocus.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/logan/CSC270-work/target/scala-2.12/classes/edu/furman/classics/csc270/hocuspocus.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	edu/furman/classics/csc270/utilities$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/logan/CSC270-work/target/scala-2.12/classes/edu/furman/classics/csc270/utilities$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	edu/furman/classics/csc270/catacomb$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/logan/CSC270-work/target/scala-2.12/classes/edu/furman/classics/csc270/catacomb$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	edu/furman/classics/csc270/webWriter$HtmlCorpus.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/logan/CSC270-work/target/scala-2.12/classes/edu/furman/classics/csc270/webWriter$HtmlCorpus.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	edu/furman/classics/csc270/webWriter.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/logan/CSC270-work/target/scala-2.12/classes/edu/furman/classics/csc270/webWriter.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	edu/furman/classics/csc270/demo$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/logan/CSC270-work/target/scala-2.12/classes/edu/furman/classics/csc270/demo$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	edu/furman/classics/csc270/webWriter$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/logan/CSC270-work/target/scala-2.12/classes/edu/furman/classics/csc270/webWriter$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	edu/furman/classics/csc270/webWriter$HtmlCorpus$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/logan/CSC270-work/target/scala-2.12/classes/edu/furman/classics/csc270/webWriter$HtmlCorpus$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	edu/furman/classics/csc270/catacomb.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/logan/CSC270-work/target/scala-2.12/classes/edu/furman/classics/csc270/catacomb.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	edu/furman/classics/csc270/demo.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/logan/CSC270-work/target/scala-2.12/classes/edu/furman/classics/csc270/demo.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	edu/furman/classics/csc270/utilities.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/logan/CSC270-work/target/scala-2.12/classes/edu/furman/classics/csc270/utilities.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
